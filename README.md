@@ -14,7 +14,7 @@ This project implements a hardware-software system that recognizes hand gestures
 
 ## Repository Contents
 
-- `handgesture_recognizer.ino` – Arduino code for controlling the sensor matrix and sending readings.
+- `hand_gesture_recognizer.ino` – Arduino code for controlling the sensor matrix and sending readings.
 - `hand_gesture.py` – Python script for collecting sensor data and visualizing it as a heatmap.
 - `handgesture.txt` – Collected dataset for training/testing.
 - `hand_ml_model_final.ipynb` – CNN implementation and training pipeline using PyTorch.
@@ -30,6 +30,8 @@ This project implements a hardware-software system that recognizes hand gestures
    - **Close the Arduino IDE** to free the serial port.
 
 2. **Collect Data**
+   - Ensure that the Serial Port matches the Serial Pord ID, i.e. usbmodem11301, of your Adruino.
+    - This can be changed in the line **ser = serial.Serial('/dev/cu.usbmodem11301', 115200)**
    - Run `hand_gesture.py` to trigger a gesture scan.
    - A heatmap of the 6x6 sensor reading will be displayed.
    - The data is normalized and flattened for model input.
