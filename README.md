@@ -3,6 +3,8 @@
 This project implements a hardware-software system that recognizes hand gestures using a custom-built 6x6 photodiode sensor array and a convolutional neural network (CNN). The system uses an Arduino Micro for scanning the photodiodes and transmitting intensity data to a Python backend, where the data is processed and classified into hand gestures.
 
 ---
+![Hand Gesture Recognizer Circuit](image.png)
+
 
 ## Overview
 
